@@ -10,9 +10,10 @@ function multiply(a,b){
   else{console.log('Minor');}
   */
 
-function multiply(a, b) {
-  return a * b;
+function multiply(value1, value2) {
+  return value1 * value2;
 }
+
 const person = {
   name: 'Alice', 
   age: 30 
@@ -20,15 +21,15 @@ const person = {
 
 if (person.age > 18) {
   console.log('Adult');
-}
-
-else {
+} else {
   console.log('Minor');
 }
 
 // 2 задание
-// Представьте, что вы работаете в команде, и вам нужно сделать код понятным для всех участников.
-// Перепишите следующий код, используя понятные и логичные имена переменных и функций:
+// Представьте, что вы работаете в команде, и вам 
+// нужно сделать код понятным для всех участников.
+// Перепишите следующий код, используя понятные 
+// и логичные имена переменных и функций:
 /*
 function x(a, b) {
   let c = a * b;
@@ -37,11 +38,10 @@ function x(a, b) {
 let d = x(5, 10);
 */
 function multiply(num1, num2) {
-  let result = num1 * num2;
-  return result;
+  return num1 * num2;
+  
 }
-let numsMultiply = multiply(5, 10);
-
+const numsMultiply = multiply(5, 10);
 
 
 // 3 задание
@@ -70,9 +70,9 @@ const price = {
 const total = price.apple + price.banana + price.orange;
 
 function calculateTotal(items) {
-  return items.reduce(function (total, item) { 
-    return total + item.price; 
-  }, 0);
+  return items.reduce((total, item) => 
+    total + item.price 
+  );
 }
 
 // 4 задание
